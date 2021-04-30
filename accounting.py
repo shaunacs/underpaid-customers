@@ -2,7 +2,8 @@ def calculate_over_under_paid(orders):
     """Takes in a file and returns customers who have over or underpaid"""
 
     for line in orders:
-        
+        customer_orders = line.split('|')
+        order_number, name, num_melons_ordered, total_paid = customer_orders
 
 
 melon_cost = 1.00
